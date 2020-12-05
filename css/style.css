@@ -1,0 +1,155 @@
+body{
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    background-color: #8dc63f;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wraper{
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 960px;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.header{
+    padding: 25px 0;
+}
+.logo{
+    float: left;
+}
+.logo p{
+    float: left;
+    font-size: 22px;
+    color: #39930d; 
+    margin: 0 35px 0 0;
+
+}
+.logo b{
+    display: block;
+    font-size: 44px;
+}
+.logo i,
+.contacts i{
+    font-size: 14px;
+    color: #5a5a5a;
+}
+.ball{
+    position: relative;
+    display: inline-block;
+    width: 102px;
+    height: 100px;
+}
+.ball img{
+    position: absolute;
+    transition: all 0.7s ease;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: rotate(0);
+}
+.ball:hover img{
+    left: 350px;
+    top: 200px;
+    transform: rotate(360deg); 
+}
+.nogoal:hover img{
+    padding-left: 200px; 
+}
+.contacts{
+    float: right;
+}
+.contacts p{
+    margin: 0;
+}
+.contacts i{
+    text-align: right;
+    display: block;
+}
+.contacts a{
+    font-size: 22px;
+    color: #39930d;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+.slider{
+    position: relative;
+}
+.slider::after{
+    position: absolute;
+    content: "";
+    top: 32px;
+    right: 284px;
+    width: 12px;
+    height: 142px;
+    background-image: url("../img/shtanga.png");
+    z-index: 2;
+}
+.slider img{
+    width: 100%;
+}
+.meme{
+    position: absolute;
+    height: 190px;
+    bottom: 3px;
+    opacity: 0;
+    transition: all 1s ease;
+}
+.show-meme{
+    opacity: 1;
+}
+#lose{
+    width: 339px;
+}
+#win{
+    width: 279px;
+}
+h1{
+    font-size: 24px;
+    color: #39930d;
+}
+.content{
+    width: 595px;
+    float: left;
+    margin-bottom: 32px;
+}
+.content p{
+    color: #343434;
+    line-height: 1.5em;
+}
+.aside_menu{
+    float: right;
+    width: 300px;
+}
+.aside_menu p{
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #39930d;
+}
+.aside_menu ul{
+    list-style: none; 
+    padding-left: 20px; 
+}
+.aside_menu li{
+    margin-bottom: 15px;
+}
+.aside_menu a{
+    text-transform: uppercase;
+    color: #39930d;
+}
+.aside_menu a:hover{
+    color: #343434;
+    text-decoration: none;
+}
+footer p{
+    margin: 0 -15px;
+    padding: 15px;
+    background-color: #39930d;
+    color: #fff;
+}
