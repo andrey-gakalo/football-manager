@@ -142,8 +142,10 @@ h1{
 .aside_menu a{
     text-transform: uppercase;
     color: #39930d;
+    transition: all 0.5s ease;
 }
 .aside_menu a:hover{
+    padding-left: 40px;
     color: #343434;
     text-decoration: none;
 }
